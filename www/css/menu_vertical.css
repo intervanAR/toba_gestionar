@@ -1,0 +1,31 @@
+.cuerpo {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 200px;
+}
+
+ul.horizontal {
+	width: 200px;
+	position:absolute;
+	left:0px;
+	cursor:default;
+	z-index:5;
+	top:145px;
+	background-color: #5368a1;
+	height: 100%;
+}
+
+ul.horizontal li {
+	width:auto;
+	float:none;
+	position:relative;
+	text-align:left;
+	left:0px;
+	margin:0 0 0 -1px;
+}
+
+.encabezado ul.horizontal ul {
+	max-height: 400px !important;
+}	

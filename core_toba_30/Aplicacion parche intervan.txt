@@ -1,0 +1,4 @@
+// TODO: actualizar
+Aplicacion parche intervan:
+
+* Copiar las carpetas php, proyectos y www en el directorio de toba (TOBA_DIR), reemplazando todos los archivos existentes.

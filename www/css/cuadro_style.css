@@ -1,0 +1,35 @@
+.ei-cuadro-cc-tit-nivel-0 {
+    border: 1px solid #231f20;
+    background-color: #6586a7;
+    color: #ffffff;
+    vertical-align: bottom;
+    padding: 0px;
+    white-space: pre-wrap;
+}
+
+.ei-cuadro-celda-impar{
+    background-color: #e7eef3 !important;
+}
+
+.ei-cuadro-celda-par{
+    background-color: #e7eef3 !important;
+}
+
+.tabla-0{
+	font-size: 95%;
+}
+
+.modalDivColumnaDif a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.modalDivColumna a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.detalleFact > a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}

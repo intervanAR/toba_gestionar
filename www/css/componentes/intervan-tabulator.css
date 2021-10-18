@@ -1,0 +1,102 @@
+/**
+ * Contiene todos los estilos del componente IntervanTabulator.
+ *
+ * @author lgraziani
+ * @see IntervanTabulator
+ * @see principal_ei_tabulator
+ */
+#formulario_toba table,
+.ci-cuerpo > .tabla-0 {
+	table-layout: fixed;
+}
+
+.tabulator-row.added {
+	background: #afeeee;
+}
+.tabulator-row.added:hover {
+	background: #7fd7d7;
+}
+
+.tabulator-row.tabulator-selected.added {
+	background: linear-gradient(135deg, #afeeee, #afeeee 20%, #9abcea);
+}
+.tabulator-row.tabulator-selected.added:hover {
+	background: linear-gradient(135deg, #7fd7d7, #7fd7d7 20%, #769bcc);
+}
+
+.tabulator-row.edited {
+	background: #eee8aa;
+}
+.tabulator-row.edited:hover {
+	background: #c9c173;
+}
+
+.tabulator-row.tabulator-selected.edited {
+	background: linear-gradient(135deg, #eee8aa, #eee8aa 20%, #9abcea);
+}
+.tabulator-row.tabulator-selected.edited:hover {
+	background: linear-gradient(135deg, #c9c173, #c9c173 20%, #769bcc);
+}
+
+.intervan-tabulator:not(:first-of-type) {
+	margin: 1em 0 0;
+}
+.intervan-tabulator .ei-barra-sup {
+	margin: 0 0 5px;
+	text-align: left !important;
+	border: 0 !important;
+	padding: 5px;
+	font-size: 1.25em;
+}
+
+.intervan-tabulator .ei-botonera {
+	background: #3333;
+	margin: 5px 0 0;
+	padding: 5px 0;
+}
+
+.intervan-tabulator .controls {
+	margin: 0 0 5px;
+}
+.intervan-tabulator .controls::after,
+.intervan-tabulator .ei-botonera::after {
+	clear: both;
+	content: '';
+	display: table;
+}
+.intervan-tabulator .controls .left {
+	float: left;
+}
+.intervan-tabulator .controls .right {
+	float: right;
+}
+.intervan-tabulator .controls button:hover,
+.intervan-tabulator .ei-botonera button:hover {
+	background: linear-gradient(to bottom, #5fc768 0%, #328e3a 100%);
+	border-color: #328e3a;
+	color: #000;
+	cursor: pointer;
+}
+.intervan-tabulator .controls button,
+.intervan-tabulator .ei-botonera button {
+	background: linear-gradient(to bottom, #3fb449 0%, #25682a 100%);
+	border: 1px solid #25682a;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+
+/* Fix button visibility */
+.intervan-tabulator .inline-event {
+	padding: 0 4px !important;
+}
+.intervan-tabulator .inline-event button:hover {
+	cursor: pointer;
+}
+
+/* extensiones */
+.intervan-tabulator .it-fecha {
+	width: calc(100% - 4px);
+	height: 100%;
+	padding: 0 0 0 4px;
+}

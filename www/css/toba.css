@@ -1,0 +1,134 @@
+/**
+	Incluir aquí las reglas css propias de este proyecto
+*/
+.ei-cuadro-title-left > table.ei-cuadro-base div.ei-cuadro-barra-sup {
+	text-align: left !important;
+}
+.ef-input-solo-lectura {
+	color: black;
+}
+
+.modalDiv {
+	box-shadow: 3px 3px 5px 6px #ccc;
+	max-width: 95%;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	overflow-y: auto;
+	background-color: white;
+	border-radius: 8px;
+}
+
+.modalDiv > div{
+	margin-left: 10px;
+}
+
+.modalDivExp {
+	box-shadow: 3px 3px 5px 6px #ccc;
+	max-width: 95%;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-top: 0.1%;
+	height: 110px;
+	width: -moz-max-content;
+    padding-left: 20px;
+    margin-left: 60%;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.pivot_title{
+	color: #111;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+	text-align: center;
+	text-transform: capitalize;
+	text-shadow: 0 3px 3px #727272;
+}
+
+.elegantshadow {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+
+    color: #2c2c2c;
+	background-color: #d5d5d5;
+	letter-spacing: .05em;
+	text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 8px;
+  }
+
+/* ///////////////////////////////////////////////////////////////////////////////
+	DROP DOWN MENU
+///////////////////////////////////////////////////////////////////////////////
+*/
+ li > .dropdown-list::before{
+  font-family: "FontAwesome";
+  font-size: xx-large;
+  margin-left: -50px;
+  margin-right: 25px;
+}
+
+.cd-dropdown span > span {
+	margin-top: 20px;
+}
+
+.cd-dropdown span > span::before{
+	font-size: xx-large;
+	margin-right: 25px;
+}
+.dropdown{
+	float: right;
+	margin-right: 30px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////
+	DROP DOWN MENU
+///////////////////////////////////////////////////////////////////////////////
+*/
+
+.btn-danger:hover {
+    background-color: #f85555;
+}
+
+.btn-danger{
+	color: #fff;
+	background-color: #d9534f;
+	border-color: #d43f3a;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	    border-top-color: transparent;
+	    border-right-color: transparent;
+	    border-bottom-color: transparent;
+	    border-left-color: transparent;
+	border-radius: 4px;
+	float: right;
+	margin-top: 25px;
+	margin-right: 30px;
+}

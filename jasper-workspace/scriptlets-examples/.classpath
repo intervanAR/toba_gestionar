@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Archivos de programa/Jaspersoft/iReport-5.6.0/ireport/modules/com-jaspersoft-ireport.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

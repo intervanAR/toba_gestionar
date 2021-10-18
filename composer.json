@@ -1,0 +1,35 @@
+{
+  "name" : "intervan/principal",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/intervanAR/framework.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/intervanAR/jasper.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/intervanAR/rest.git"
+    },
+    {
+      "type": "composer",
+      "url": "https://satis.siu.edu.ar"
+    }
+  ],
+  "require": {
+    "siu-toba/framework": "dev-intervan",
+    "siu-toba/jasper": "dev-intervan"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/"
+    ],
+    "post-update-cmd": [
+      "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable" : true
+}

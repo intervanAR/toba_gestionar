@@ -1,0 +1,23 @@
+<?php
+/**
+ * Para más información ver el phpdoc de `.principal_php_cs`
+ *
+ * @author lgraziani
+ *
+ * @version 1.0.0
+ *
+ * @see https://github.com/FriendsOfPHP/PHP-CS-Fixer
+ */
+require __DIR__.'/rules.php';
+
+$baseUrl = __DIR__.'/../../rrhh/php/interfaz';
+
+$finder = PhpCsFixer\Finder::create()
+    ->in("$baseUrl/referencia/persona");
+
+return PhpCsFixer\Config::create()
+    ->setCacheFile(__DIR__.'/.rrhh_php_cs.cache')
+    ->setUsingCache(true)
+    ->setIndent("\t")
+    ->setRules($rules)
+    ->setFinder($finder);

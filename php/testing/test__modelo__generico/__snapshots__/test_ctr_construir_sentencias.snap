@@ -1,0 +1,1 @@
+a:2:{s:16:"test__sql_update";s:106:"UPDATE RE_CALLES SET columna1 = 'valor1', columna2 = '2', columna3 = 'valor3', columna4 = '4' WHERE id = 1";s:32:"test__construir_sentencia_insert";s:106:"INSERT INTO RE_CALLES (columna1 , columna2 , columna3 , columna4) VALUES ('valor1' , '2' , 'valor3' , '4')";}

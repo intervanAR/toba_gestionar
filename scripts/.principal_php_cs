@@ -1,0 +1,41 @@
+<?php
+/**
+ * La versión de php-cs-fixer que está en esta carpeta es la última
+ * para versiones menores a la 5.6. A menos que no se actualice PHP
+ * a esa versión o una más nueva, no se puede actualizar.
+ *
+ * Este módulo se encarga de formatear el código PHP según un
+ * conjunto de reglas a archivos de un conjunto específico de
+ * carpetas.
+ *
+ * Limitaciones:
+ *  - No se puede definir un ancho máximo en la línea:
+ *    https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/1361
+ *    Por lo que la decisión de qué darle salto de línea o no corre
+ *    por nuestra cuenta. En general se recomiendan líneas de
+ *    no más de 80-100 caracteres.
+ *  - No genera saltos de línea luego de definir variables locales.
+ *  - No genera saltos de línea antes de un return.
+ *  - No se encarga de definir un salto de línea para cada parámetro
+ *    en caso de estar en varias líneas. Esa propiedad está disponible
+ *    en una versión más nueva de php-cs-fixer.
+ *
+ * @author lgraziani
+ *
+ * @version 1.0.0
+ *
+ * @see https://github.com/FriendsOfPHP/PHP-CS-Fixer
+ */
+require __DIR__.'/rules.php';
+
+$finder = PhpCsFixer\Finder::create()
+	->in(__DIR__.'/../php/interfaz/librerias_componentes/generador_reportes')
+	->in(__DIR__.'/../php/extension_toba/componentes/tabulator')
+	->in(__DIR__.'/../php/testing');
+
+return PhpCsFixer\Config::create()
+	->setCacheFile(__DIR__.'/.principal_php_cs.cache')
+	->setUsingCache(true)
+	->setIndent("\t")
+	->setRules($rules)
+	->setFinder($finder);
